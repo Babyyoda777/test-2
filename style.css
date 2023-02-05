@@ -1,6 +1,10 @@
+:root{
+    --bg: hsl(0, 0%, 98%); 
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: hsl(0, 0%, 98%);
+    background-color: var(--bg);
     width: 100vw;
     margin: 0 auto;
 }
@@ -118,6 +122,8 @@ p>strong::after {
     right: -0.25rem;
 }
 
+/* Description Text fix */ 
+
 .long-line{
     white-space: nowrap;
     justify-self: center;
@@ -139,7 +145,7 @@ p>strong::after {
 }
 
 ul {
-    height: 6.8vh;
+    height: 80px;
     list-style: none;
 }
 .nav-link{
