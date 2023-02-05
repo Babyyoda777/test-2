@@ -1,5 +1,5 @@
 :root{
-    --bg: hsl(0, 0%, 98%); 
+    --bg: rgb(255,255,255);
     --default: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(219,246,248,1) 6%, rgba(219,246,248,1) 100%);
 }
 
@@ -208,6 +208,7 @@ li {
 @media (max-width:960px) {
 
     .about-me {
+        margin: 0 auto;
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -232,6 +233,7 @@ li {
 @media (min-width:960px) {
 
     .about-me {
+        margin: 0 auto;
         width: 100vw;
         height: 100vh;
         display: flex;
