@@ -1,5 +1,6 @@
 :root{
     --bg: hsl(0, 0%, 98%); 
+    --default: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(219,246,248,1) 6%, rgba(219,246,248,1) 100%);
 }
 
 body {
@@ -145,7 +146,7 @@ p>strong::after {
 }
 
 ul {
-    height: 70px;
+    height: 80px;
     list-style: none;
 }
 .nav-link{
@@ -199,4 +200,54 @@ li {
         cursor: pointer;
         text-decoration: none;
     }
+}
+
+/* About Me */ 
+
+
+@media (max-width:960px) {
+
+    .about-me {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3vh;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(219,246,248,1) 6%, rgba(219,246,248,1) 100%);
+    }
+    .title{
+        text-align: center;
+    }
+
+    .about{
+        max-width: 500px;
+    }
+
+}
+
+/* Media Query for when screen is larger than 960px */  
+
+@media (min-width:960px) {
+
+    .about-me {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4.5vh;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(219,246,248,1) 6%, rgba(219,246,248,1) 100%);
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .about{
+        width: 1000px;
+    }
+
 }
